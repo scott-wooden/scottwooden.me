@@ -1,6 +1,6 @@
 'use client'
 
-import { PropsWithChildren, Ref, useCallback, useEffect, useRef, useState } from "react";
+import { PropsWithChildren, useCallback, useEffect, useRef, useState } from "react";
 import AboutMe from "./components/AboutMe";
 import CareersList from "./components/CareersList";
 import classNames from "classnames";
@@ -20,12 +20,20 @@ function SectionHeader({ children }: PropsWithChildren) {
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
+  const [windowHeight, setWindowHeight] = useState(0);
+
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const onScroll = useCallback((event: Event) => {
     const target = event.target as HTMLElement;
     if (target && 'scrollTop' in target) {
       setScrollY(target.scrollTop);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowHeight(window.innerHeight)
     }
   }, []);
 
@@ -46,7 +54,7 @@ export default function Home() {
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         className={classNames("flex flex-col flex-0 max-w-2xl h-screen border-r border-r-gray-100 transition-all duration-500", {
-          "-translate-x-7 opacity-30 blur": !isHovering && (scrollY > (window && window.innerHeight / 2))
+          "-translate-x-7 opacity-30 blur": !isHovering && (scrollY > (windowHeight / 2))
         })}>
         <AboutMe />
       </aside>

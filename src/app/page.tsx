@@ -20,7 +20,7 @@ function SectionHeader({ children }: PropsWithChildren) {
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const onScroll = useCallback((event: Event) => {
     const target = event.target as HTMLElement;
@@ -30,9 +30,13 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    scrollRef.current?.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      scrollRef.current?.removeEventListener("scroll", onScroll, { passive: true });
+    const currentRef = scrollRef.current;
+    if (currentRef) {
+      currentRef.addEventListener("scroll", onScroll, { passive: true });
+
+      return () => {
+        currentRef.removeEventListener("scroll", onScroll);
+      }
     }
   }, [onScroll]);
 

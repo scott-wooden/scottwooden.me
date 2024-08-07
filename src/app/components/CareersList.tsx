@@ -1,30 +1,52 @@
 import { useState } from "react";
 import { Transition } from '@headlessui/react'
+import Image from "next/image";
+import classNames from "classnames";
+import { FaCross, FaLink } from "react-icons/fa";
+import { FaSquareArrowUpRight } from "react-icons/fa6";
+
+const AtellioMono = '/Atellio-mono.png';
+const AtellioColor = '/Atellio-color.png';
+
+const EasleMono = '/Easle-mono.png';
+const EasleColor = '/Easle-color.png';
+
+const DojoMono = '/Dojo-mono.png';
+const DojoColor = '/Dojo-color.png';
+
+const OrderswiftMono = '/Orderswift-mono.png';
+const OrderswiftColor = '/Orderswift-color.png';
 
 
-function CareerItem({ title, subtitle, meta, children }: { title: string | React.ReactNode, subtitle: string, meta: string, children?: React.ReactNode }) {
+function CareerItem({ title, subtitle, meta, children, logo }: { title: string | React.ReactNode, subtitle: string, meta: string, logo: string, children?: React.ReactNode }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div onClick={() => setExpanded((prev) => !prev)} className="rounded-lg bg-white cursor-pointer hover:bg-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2" role="button">
+    <div onClick={() => setExpanded((prev) => !prev)} className={classNames("rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })} role="button">
+
       <div className="flex p-4 items-center gap-4">
-        <div className="flex-0 h-16 w-16 rounded-sm bg-slate-300">
-          {/* <Image src="https://placekitten.com/300/300" width="80" height="80" alt="logo" /> */}
+        <div className="flex-0 h-16 w-16 rounded overflow-hidden relative">
+          <Image src={logo} className={classNames("absolute left-0 top-0 saturate-0 opacity-30 transition-all group-hover:saturate-100 group-hover:opacity-100", { "saturate-100 opacity-100": expanded })} width="80" height="80" alt="logo" />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold truncate">{title}</h3>
           <p className="text-sm text-gray-500 truncate">{subtitle}</p>
         </div>
-        <div className="flex-0l">
-          <p className="italic text-sm text-gray-400">
+        <div className="flex-0 relative">
+          <p className="italic text-sm text-gray-400 transition-opacity group-hover:opacity-0">
             {meta}
+          </p>
+          <p className={classNames("absolute top-0 right-0 italic text-sm text-gray-400 transition-opacity opacity-0 group-hover:opacity-100", { "opacity-0": expanded })}>
+            {expanded ? "View less" : "View more"}
           </p>
         </div>
       </div>
 
       <Transition show={expanded}>
-        <div className="transition duration-700 ease-in-out data-[closed]:opacity-0 data-[closed]:h-0 pl-24 prose md:prose-md lg:prose-md pb-16">
-          {children}
+        <div className="transition-all duration-700 ease-in-out data-[closed]:opacity-0 data-[closed]:h-0 overflow-hidden">
+          <div className="pl-24 prose md:prose-md lg:prose-md pb-16">
+            {children}
+          </div>
         </div>
       </Transition>
 
@@ -39,11 +61,12 @@ function CareersList() {
         title={<>Atellio <span className="font-medium">SaaS Enterprise Product</span></>}
         subtitle="Co-Founder & CPO · Design, Development & Branding"
         meta="2018 - Present"
+        logo={AtellioColor}
       >
         <>
-          <p>
-            TL:DR
-          </p>
+          <a href="https://atellio.com" target="_blank" className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm no-underline">
+            <FaLink /> Visit at atellio.com <FaSquareArrowUpRight />
+          </a>
           <ul>
             <li>💻 Enterprise SaaS talent management / resourcing platform</li>
             <li>💵 Raised $1m from investors to scale and grow product offering</li>
@@ -68,11 +91,12 @@ function CareersList() {
         title={<>Easle <span className="font-medium">Premium Creative Marketplace</span></>}
         subtitle="Co-Founder & CPO · Design, Development & Branding"
         meta="2016 - 2018"
+        logo={EasleColor}
       >
         <>
-          <p>
-            TL:DR
-          </p>
+          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-100">
+            <FaCross className="text-gray-500" /> Shut down 2019
+          </div>
           <ul>
             <li>💻 A marketplace to find and book talented vetted creatives</li>
             <li>💵 Raised $450,000 from angels to scale up marketplace</li>
@@ -95,11 +119,12 @@ function CareersList() {
         title={<>Dojo <span className="font-medium">London City Discovery App</span></>}
         subtitle="Senior Designer · UX / UI Design & Development"
         meta="2015 - 2016"
+        logo={DojoColor}
       >
         <>
-          <p>
-            TL:DR
-          </p>
+          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-100">
+            <FaCross className="text-gray-500" /> Shut down 2018
+          </div>
           <ul>
             <li>💻 A City Discovery App for London / Paris - Think Timeout but cooler...</li>
             <li>💵 Designed and developed the web version of the app & a savvy newsletter builder</li>
@@ -121,11 +146,12 @@ function CareersList() {
         title={<>Orderswift <span className="font-medium">Click & Collect Restaurant Ordering</span></>}
         subtitle="Founding Designer · Design & Development"
         meta="2012 - 2015"
+        logo={OrderswiftColor}
       >
         <>
-          <p>
-            TL:DR
-          </p>
+          <a href="https://orderswift.com" target="_blank" className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm no-underline">
+            <FaLink /> Visit at orderswift.com <FaSquareArrowUpRight />
+          </a>
           <ul>
             <li>💻 A customisable restaurant click & collect ordering platform</li>
             <li>💵 Designed & developed customer facing application as well as restaurant order system</li>

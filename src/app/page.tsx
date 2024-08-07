@@ -10,9 +10,9 @@ import ProjectsList from "./components/ProjectsList";
 function SectionHeader({ children }: PropsWithChildren) {
   return (
     <div className="p-8 flex items-center justify-center gap-2">
-      <hr className="flex- 0 w-11" />
+      {/* <hr className="flex- 0 w-11" /> */}
       <h2 className="text-2xl font-display italic text-gray-500">{children}</h2>
-      <hr className="flex- 0 w-11" />
+      {/* <hr className="flex- 0 w-11" /> */}
     </div>
   )
 }
@@ -60,8 +60,9 @@ export default function Home() {
       </aside>
       <section ref={scrollRef} className="flex-1 px-16 h-screen overflow-y-scroll">
         <div className="max-w-3xl mx-auto">
-          <div className="h-screen flex items-center justify-center">
-            Scroll
+          <div className="h-screen flex flex-col items-center justify-end">
+            <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">More</div>
+            <div className="w-[1px] h-1/2 bg-gray-200" />
           </div>
           <SectionHeader>
             Career
@@ -72,9 +73,13 @@ export default function Home() {
           </SectionHeader>
           <PressList />
           <SectionHeader>
-            Passion projects
+            Other projects
           </SectionHeader>
           <ProjectsList />
+          <div className="h-screen flex flex-col items-center justify-start pt-10">
+            <div className="w-[1px] h-1/2 bg-gray-200" />
+            <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">End</div>
+          </div>
         </div>
       </section>
     </main>

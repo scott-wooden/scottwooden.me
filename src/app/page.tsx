@@ -80,8 +80,11 @@ export default function Home() {
           <ProjectsList />
           <div className="h-screen flex flex-col items-center justify-start pt-10">
             <div className="w-[1px] h-1/2 bg-gray-200" />
-            <div className="py-1 px-2 rounded text-gray-600 text-6xl">🍌</div>
+            <div className="py-2 px-2 rounded text-gray-600 text-6xl">🍌</div>
+            <div className="py-1 px-2 rounded text-gray-800 text-sm text-center">Thanks for stopping by!</div>
+            <div className="py-1 px-2 rounded text-gray-400 text-sm text-center">If you want to chat about a project please do <a href="mailto:scottwooden90@gmail.com" className="underline">get in touch</a></div>
             <div className="w-[1px] h-1/2 bg-white" />
+            <div className="py-1 px-2 rounded text-gray-400 text-xs pb-8">Built with NextJS · Deployed using Vercel</div>
           </div>
         </div>
       </section>

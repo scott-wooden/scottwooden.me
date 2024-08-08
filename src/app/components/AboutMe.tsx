@@ -12,7 +12,7 @@ function EngineeringTooltip() {
   return (
     <span className="group font-bold italic relative border-b border-gray-300 hover:border-gray-500">
       Engineer
-      <div className="group-hover:opacity-100 opacity-0 scale-95 group-hover:scale-100 transition-all py-2 px-4 shadow rounded-full bg-black text-white text-xs absolute -bottom-8 -left-4 font-body whitespace-nowrap">Specialising in Front-End · Building in React </div>
+      <div className="group-hover:opacity-100 pointer-events-none opacity-0 scale-95 group-hover:scale-100 transition-all py-2 px-4 shadow rounded-full bg-black text-white text-xs absolute -bottom-8 -left-4 font-body whitespace-nowrap">Specialising in Front-End · Building in React </div>
     </span>
   )
 }
@@ -31,32 +31,32 @@ function AboutMe() {
           <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-medium font-display my-1">Hey! I&apos;m <span className="font-bold">Scott</span></h1>
           <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-medium font-display">A <span className="font-bold italic rainbow">Digital Designer</span> & <EngineeringTooltip /></h1>
           <p className="my-4 text-md sm:text-lg">
-            For the past 7 years I’ve worked on my own start-up - Atellio - alongside my co-founder. Before that I designed and built digital products for an eclectic mix of start-ups.
+            For the past 7 years I’ve worked on my own start-up - <a href="http://atellio.com" target="_blank" className="font-display italic border-b border-b-gray-300">Atellio</a> alongside my co-founder. Before that I designed and built digital products for an eclectic mix of start-ups.
           </p>
           <p className="my-4 text-md sm:text-lg">
-            My experience runs across consumer and b2b web applications - with a sharp focus on guiding early companies build first versions of their product - from wireframe to launch.
+            My experience runs across consumer and b2b web applications - with a sharp focus on early-stage companies to build first versions of their product - from wireframe to launch.
           </p>
           <p className="my-4 text-md sm:text-lg">
             I’ve built products that are trusted by companies like{" "}
-            <span className="mr-2 inline-block font-semibold">
+            <span className="mr-3 inline-block font-semibold">
               <span className="w-5 h-5 inline-flex items-center justify-center align-text-bottom rounded-sm overflow-hidden bg-gray-100">
                 <Image src={Zizzi} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Zizzi
             </span>
-            <span className="mr-2 inline-block font-semibold">
+            <span className="mr-3 inline-block font-semibold">
               <span className="w-5 h-5 inline-flex items-center justify-center align-text-bottom rounded-sm overflow-hidden bg-gray-100">
                 <Image src={Splashlight} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Splashlight
             </span>
-            <span className="mr-2 inline-block font-semibold">
+            <span className="mr-3 inline-block font-semibold">
               <span className="w-5 h-5 inline-flex items-center justify-center align-text-bottom rounded-sm overflow-hidden bg-gray-100">
                 <Image src={Nordstrom} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Nordstrom
             </span>
-            <span className="mr-2 inline-block font-semibold">
+            <span className="mr-3 inline-block font-semibold">
               <span className="w-5 h-5 inline-flex items-center justify-center align-text-bottom rounded-sm overflow-hidden bg-gray-100">
                 <SiNike className="text-black" />
               </span>{" "}

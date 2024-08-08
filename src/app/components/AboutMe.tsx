@@ -1,13 +1,15 @@
 import { FaInstagram, FaLinkedin, FaMedium, FaRegEnvelope } from "react-icons/fa";
+const ProfileVideo = '/Me.mp4';
+
 
 function AboutMe() {
 
   return (
     <>
       <div className="px-16 pt-16 flex-1 overflow-y-scroll">
-        <div className="w-40 h-40 flex-0 bg-slate-100 rounded-md overflow-hidden">
-          <video width="160" height="160" autoPlay loop className="w-40 h-40 object-cover" playsInline preload="none" muted>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        <div className="w-32 h-40 flex-0 bg-slate-100 rounded-md overflow-hidden">
+          <video width="160" height="160" autoPlay loop className="w-32 h-40 object-cover" playsInline preload="none" muted>
+            <source src={ProfileVideo} type="video/mp4" />
           </video>
         </div>
         <div className="p-4">

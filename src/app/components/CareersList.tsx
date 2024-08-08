@@ -5,24 +5,16 @@ import classNames from "classnames";
 import { FaCross, FaLink } from "react-icons/fa";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 
-const AtellioMono = '/Atellio-mono.png';
 const AtellioColor = '/Atellio-color.png';
-
-const EasleMono = '/Easle-mono.png';
 const EasleColor = '/Easle-color.png';
-
-const DojoMono = '/Dojo-mono.png';
 const DojoColor = '/Dojo-color.png';
-
-const OrderswiftMono = '/Orderswift-mono.png';
 const OrderswiftColor = '/Orderswift-color.png';
-
 
 function CareerItem({ title, subtitle, meta, children, logo }: { title: string | React.ReactNode, subtitle: string, meta: string, logo: string, children?: React.ReactNode }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div onClick={() => setExpanded((prev) => !prev)} className={classNames("rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })} role="button">
+    <a role="button" onClick={() => setExpanded((prev) => !prev)} className={classNames("block rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })}>
 
       <div className="flex p-4 items-center gap-4">
         <div className="flex-0 h-16 w-16 rounded overflow-hidden relative">
@@ -37,7 +29,7 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
             {meta}
           </p>
           <p className={classNames("absolute top-0 right-0 italic text-sm text-gray-400 transition-opacity opacity-0 group-hover:opacity-100", { "opacity-0": expanded })}>
-            {expanded ? "View less" : "View more"}
+            {expanded ? "Read less" : "Read more"}
           </p>
         </div>
       </div>
@@ -50,7 +42,7 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
         </div>
       </Transition>
 
-    </div>
+    </a>
   )
 }
 
@@ -64,8 +56,8 @@ function CareersList() {
         logo={AtellioColor}
       >
         <>
-          <a href="https://atellio.com" target="_blank" className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm no-underline">
-            <FaLink /> Visit at atellio.com <FaSquareArrowUpRight />
+          <a href="https://atellio.com" target="_blank" className="group/link relative px-2 py-1 border rounded-full inline-flex gap-1 items-center duration-300 border-gray-200 text-sm no-underline transition-all hover:pr-7 hover:shadow-sm hover:border-gray-400">
+            <FaLink className="text-gray-300 group-hover/link:text-gray-400 transition-all duration-300" /> Visit at atellio.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
           </a>
           <ul>
             <li>💻 Enterprise SaaS talent management / resourcing platform</li>
@@ -149,8 +141,8 @@ function CareersList() {
         logo={OrderswiftColor}
       >
         <>
-          <a href="https://orderswift.com" target="_blank" className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm no-underline">
-            <FaLink /> Visit at orderswift.com <FaSquareArrowUpRight />
+          <a href="https://orderswift.com" target="_blank" className="group/link relative px-2 py-1 border rounded-full inline-flex gap-1 items-center duration-300 border-gray-200 text-sm no-underline transition-all hover:pr-7 hover:shadow-sm hover:border-gray-400">
+            <FaLink className="text-gray-300 group-hover/link:text-gray-400 transition-all duration-300" /> Visit at orderswift.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
           </a>
           <ul>
             <li>💻 A customisable restaurant click & collect ordering platform</li>

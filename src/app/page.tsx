@@ -49,19 +49,19 @@ export default function Home() {
   }, [onScroll]);
 
   return (
-    <main className="h-screen flex bg-white cursor-default">
+    <main className="xl:h-screen flex flex-col xl:flex-row bg-white cursor-default">
       <aside
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
-        className={classNames("flex flex-col flex-0 max-w-2xl h-screen border-r border-r-gray-100 transition-all duration-500", {
-          "-translate-x-7 opacity-30 blur": !isHovering && (scrollY > (windowHeight / 2))
+        className={classNames("flex flex-col flex-0 xl:max-w-2xl xl:h-screen border-r border-r-gray-100 transition-all duration-500", {
+          "xl:-translate-x-7 xl:opacity-30 xl:blur": !isHovering && (scrollY > (windowHeight / 2))
         })}>
         <AboutMe />
       </aside>
-      <section ref={scrollRef} className="flex-1 px-16 h-screen overflow-y-scroll">
+      <section ref={scrollRef} className="flex-1 px-16 xl:h-screen overflow-y-scroll">
         <div className="max-w-3xl mx-auto">
-          <div className="h-screen flex flex-col items-center justify-end">
-            <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">More</div>
+          <div className="xl:flex h-screen flex-col items-center justify-end hidden">
+            <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">Learn more about me</div>
             <div className="w-[1px] h-1/2 bg-gray-200" />
           </div>
           <SectionHeader>

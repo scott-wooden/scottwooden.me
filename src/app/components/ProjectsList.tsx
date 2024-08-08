@@ -10,7 +10,7 @@ function ProjectsItem({ title, subtitle, link, logo }: { title: string | React.R
   return (
     <a href={link} target="_blank" className="group block rounded-lg transition-all bg-white cursor-pointer hover:bg-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2">
       <div className="flex p-4 items-center gap-4">
-        <div className="flex-0 h-16 w-16 rounded-sm bg-slate-300">
+        <div className="flex-0 h-12 w-12 md:h-16 md:w-16 rounded-md overflow-hidden bg-slate-300">
           <Image src={logo} className="saturate-0 opacity-30 transition-all group-hover:saturate-100 group-hover:opacity-100" width="80" height="80" alt="logo" />
         </div>
         <div className="flex-1 min-w-0">

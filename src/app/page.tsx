@@ -58,8 +58,8 @@ export default function Home() {
         })}>
         <AboutMe />
       </aside>
-      <section ref={scrollRef} className="flex-1 px-16 xl:h-screen overflow-y-scroll">
-        <div className="max-w-3xl mx-auto">
+      <section ref={scrollRef} className="flex-1 px-4 xl:px-16 xl:h-screen overflow-y-scroll">
+        <div className="max-w-3xl mx-auto px-4 xl:px-0">
           <div className="xl:flex h-screen flex-col items-center justify-end hidden">
             <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">Learn more about me</div>
             <div className="w-[1px] h-1/2 bg-gray-200" />

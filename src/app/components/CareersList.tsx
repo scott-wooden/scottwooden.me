@@ -16,9 +16,9 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
   return (
     <a role="button" onClick={() => setExpanded((prev) => !prev)} className={classNames("block rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })}>
 
-      <div className="flex p-4 items-center gap-4">
-        <div className="flex-0 h-16 w-16 rounded overflow-hidden relative">
-          <Image src={logo} className={classNames("absolute left-0 top-0 saturate-0 opacity-30 transition-all group-hover:saturate-100 group-hover:opacity-100", { "saturate-100 opacity-100": expanded })} width="80" height="80" alt="logo" />
+      <div className="flex p-4 items-center gap-2 md:gap-4">
+        <div className="flex-0 h-12 w-12 md:h-16 md:w-16 rounded overflow-hidden relative">
+          <Image src={logo} className={classNames("absolute left-0 top-0 saturate-0 transition-all group-hover:saturate-100 group-hover:opacity-100", { "saturate-100 opacity-100": expanded, "opacity-30": !expanded })} width="80" height="80" alt="logo" />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold truncate">{title}</h3>
@@ -36,7 +36,7 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
 
       <Transition show={expanded}>
         <div className="transition-all duration-700 ease-in-out data-[closed]:opacity-0 data-[closed]:h-0 overflow-hidden">
-          <div className="pl-24 prose md:prose-md lg:prose-md pb-16">
+          <div className="px-4 md:pl-24 prose md:prose-md lg:prose-md pb-16">
             {children}
           </div>
         </div>

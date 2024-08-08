@@ -27,6 +27,7 @@ export default function Home() {
   const onScroll = useCallback((event: Event) => {
     const target = event.target as HTMLElement;
     if (target && 'scrollTop' in target) {
+
       setScrollY(target.scrollTop);
     }
   }, []);
@@ -58,11 +59,12 @@ export default function Home() {
         })}>
         <AboutMe />
       </aside>
-      <section ref={scrollRef} className="flex-1 px-4 xl:px-16 xl:h-screen overflow-y-scroll">
+      <section ref={scrollRef} className="flex-1 xl:px-16 xl:h-screen overflow-y-scroll">
         <div className="max-w-3xl mx-auto px-4 xl:px-0">
           <div className="xl:flex h-screen flex-col items-center justify-end hidden">
-            <div className="py-1 px-2 rounded text-gray-600 text-6xl">🍌</div>
-            <div className="w-[1px] h-1/2 bg-gray-200" />
+            <div className="w-[1px] h-1/2 bg-white" />
+            <div className="py-1 px-2 rounded text-gray-600 text-6xl">👇🏽</div>
+            <div className="w-[1px] h-1/2 bg-gray-200 bg-gradient-to-t from-gray-200 to-white" />
           </div>
           <SectionHeader>
             Career
@@ -78,7 +80,8 @@ export default function Home() {
           <ProjectsList />
           <div className="h-screen flex flex-col items-center justify-start pt-10">
             <div className="w-[1px] h-1/2 bg-gray-200" />
-            <div className="py-1 px-2 rounded text-gray-600 text-sm bg-gray-200">End</div>
+            <div className="py-1 px-2 rounded text-gray-600 text-6xl">🍌</div>
+            <div className="w-[1px] h-1/2 bg-white" />
           </div>
         </div>
       </section>

@@ -74,9 +74,6 @@ function CareersList() {
           <p>
             In its peak we got to just shy of $1m in annual recurring revenue, with customers like Nike, Walmart, Nordstrom and REI to name a few. Serving 100’s of users within these customers to manage their fluid workforce across high velocity projects.
           </p>
-          <p>
-            We soon struggled to grow beyond that as our offering was highly specific to photo / video production which only provided enough value to very large enterprise customers. The platform is currently being maintained to serve it’s existing customers.
-          </p>
         </>
       </CareerItem>
       <CareerItem
@@ -96,13 +93,16 @@ function CareersList() {
             <li>🏢 Customers ranged from boutique production houses to large creative agencies</li>
           </ul>
           <p>
-            Dojo was a city discovery app that aimed to capture the zeitgeist of London. It quickly became a hot pocket within London where for most millennials it was customary to have both Citymapper and Dojo to be considered a “Londoner”.
+            Easle was a vetted talent marketplace allowing companies to find and book high-bar creative talent across design, illustration and photography. We catered to heavyweight creative agencies and brands that valued the top 10% of creatives.
           </p>
           <p>
-            With its user base quickly growing, I was brought on to re-design and develop their newsletter builder, being one of its key marketing channels serving 100k+ subscribers. Alongside this, with the app snapping up design awards, I worked with the founding designer to translate the design to the web, allowing users without the app to access the good stuff.
+            Our approach was to vet both the talent onboarding the platform, as well as the companies looking to hire them. Talent was vetted by appointing “Creative Ambassadors”, who would sift through the applications and approve talent based on their quality of work. That way, we could ensure substantial and fair briefs for the talent on our roster. Our roster totalled 700+ top tier Graphic Designers, Animators, Illustrators & Photographers.
           </p>
           <p>
-            Unfortunately, the app shut down a few years later, leaving all wannabe London trendsetters anxious in having to revert back to more vanilla apps like Timeout.
+            We built an entire booking engine where companies are guided to create contracts that are reviewed and approved by both parties. These contracts were then tied to financial amounts where companies can choose to pay through a number of payment methods.
+          </p>
+          <p>
+            While we managed to scale contract revenue to $20k / month, we quickly learned that companies preferred the traditional route of talent agencies where hoping on a phone was more convenient than going through talent marketplace to find and coordinate bookings.
           </p>
         </>
       </CareerItem>
@@ -129,7 +129,7 @@ function CareersList() {
             With its user base quickly growing, I was brought on to re-design and develop their newsletter builder, being one of its key marketing channels serving 100k+ subscribers. Alongside this, with the app snapping up design awards, I worked with the founding designer to translate the design to the web, allowing users without the app to access the good stuff.
           </p>
           <p>
-            Unfortunately, the app shut down a few years later, leaving all wannabe London trendsetters anxious in having to revert back to more vanilla apps like Timeout.
+            Unfortunately, the app shut down a few years later, leaving all wannabe London trendsetters anxious in having to revert back to more apps like Timeout.
           </p>
         </>
       </CareerItem>
@@ -156,7 +156,7 @@ function CareersList() {
             I worked with the founders to conceptualise, wireframe, design and build the food ordering experience from the ground up. This included the customer facing menu and checkout system, as well as the restaurant application to receive and manage the orders coming through our system.
           </p>
           <p>
-            The business continues on today serving customers across a number of high street chains.
+            The business continues on today serving customers across a number of high street chains such as Zizzi, Giggling Squid & Busaba.
           </p>
         </>
       </CareerItem>

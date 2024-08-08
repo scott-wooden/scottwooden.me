@@ -35,7 +35,6 @@ const PressList = () => {
       <PressItem title="App launched to help manage freelance contacts" subtitle="Broadcast" link="https://www.broadcastnow.co.uk/tech/app-launched-to-help-manage-freelance-contacts-/5131443.article" logo={BroadcastIcon} />
       <PressItem title="4 design tools you never knew you needed" subtitle="Creative Bloq" link="https://www.creativebloq.com/features/4-design-tools-you-never-knew-you-needed" logo={CreativeBloqIcon} />
       <PressItem title="5 New Websites Artists Can Use to Boost Their Careers" subtitle="Artsy" link="https://www.artsy.net/article/artsy-editorial-5-new-websites-artists-boost-careers" logo={ArtsyIcon} />
-      <PressItem title="9 tools to make graphic design easier in 2018" subtitle="Creative Bloq" link="https://www.creativebloq.com/inspiration/9-tools-to-make-graphic-design-easier-in-2018" logo={CreativeBloqIcon} />
       <PressItem title="On-demand artist commissioning platform Easle secures £450,000 Seed" subtitle="UK Tech News" link="https://www.uktech.news/news/demand-artist-commissioning-platform-easle-secures-450000-seed-20170913" logo={UKTechNewsIcon} />
     </>
   );

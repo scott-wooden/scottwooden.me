@@ -27,10 +27,10 @@ body {
 .rainbow {
   background: linear-gradient(
     90deg,
-    #ff6969 0%,
-    #eed036 37%,
-    #51b6ff 67%,
-    #f047ff 100%
+    #fc5353 0%,
+    #f7d736 37%,
+    #3facfa 67%,
+    #e735f7 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

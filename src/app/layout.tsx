@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Scott Wooden",
-  description: "Product Designer & Engineer",
+  description: "Digital Designer & Engineer",
 };
 
 export default function RootLayout({
@@ -13,6 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );

@@ -14,7 +14,7 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <a role="button" onClick={() => setExpanded((prev) => !prev)} className={classNames("block rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })}>
+    <button onClick={() => setExpanded((prev) => !prev)} className={classNames("text-left w-full block rounded-lg group bg-white cursor-pointer border border-white transition-all hover:border-gray-100 outline-1 outline-white focus-visible:outline-gray-700 focus-visible:outline-2 relative", { "border-gray-100": expanded })}>
 
       <div className="flex p-4 items-center gap-2 md:gap-4">
         <div className="flex-0 h-12 w-12 md:h-16 md:w-16 rounded overflow-hidden relative">
@@ -35,14 +35,14 @@ function CareerItem({ title, subtitle, meta, children, logo }: { title: string |
       </div>
 
       <Transition show={expanded}>
-        <div className="transition-all duration-700 ease-in-out data-[closed]:opacity-0 data-[closed]:h-0 overflow-hidden">
+        <div className="transition-all duration-700 ease-in-out max-h-[2000px] data-[closed]:opacity-0 data-[closed]:max-h-0 overflow-hidden">
           <div className="px-4 md:pl-24 prose md:prose-md lg:prose-md pb-16">
             {children}
           </div>
         </div>
       </Transition>
 
-    </a>
+    </button>
   )
 }
 
@@ -57,7 +57,7 @@ function CareersList() {
       >
         <>
           <a href="https://atellio.com" target="_blank" className="group/link relative px-2 py-1 border rounded-full inline-flex gap-1 items-center duration-300 border-gray-200 text-sm no-underline transition-all hover:pr-7 hover:shadow-sm hover:border-gray-400">
-            <FaLink className="text-gray-300 group-hover/link:text-gray-400 transition-all duration-300" /> Visit at atellio.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
+            <FaLink className="text-gray-300 group-hover/link:text-black transition-all duration-300" /> Visit at atellio.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
           </a>
           <ul>
             <li>💻 Enterprise SaaS talent management / resourcing platform</li>
@@ -142,7 +142,7 @@ function CareersList() {
       >
         <>
           <a href="https://orderswift.com" target="_blank" className="group/link relative px-2 py-1 border rounded-full inline-flex gap-1 items-center duration-300 border-gray-200 text-sm no-underline transition-all hover:pr-7 hover:shadow-sm hover:border-gray-400">
-            <FaLink className="text-gray-300 group-hover/link:text-gray-400 transition-all duration-300" /> Visit at orderswift.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
+            <FaLink className="text-gray-300 group-hover/link:text-black transition-all duration-300" /> Visit at orderswift.com <FaSquareArrowUpRight className="transition-all absolute right-1 opacity-0 duration-300 group-hover/link:opacity-100 group-hover/link:right-2" />
           </a>
           <ul>
             <li>💻 A customisable restaurant click & collect ordering platform</li>

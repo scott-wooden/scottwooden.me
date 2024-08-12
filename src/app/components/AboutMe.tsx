@@ -32,13 +32,13 @@ function AboutMe() {
           </video>
         </div>
         <div className="pt-4 sm:p-4">
-          <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display">Hey! I&apos;m Scott.</h1>
-          <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display">A space-loving, 90's-bopping <br /> <span className="font-bold italic rainbow">digital designer</span> & <EngineeringTooltip /></h1>
+          <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display !leading-10">Hey! I&apos;m Scott.</h1>
+          <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display italic !leading-10">A space-loving, 90&apos;s-bopping <br /> <span className="font-bold italic rainbow">digital designer</span> & <EngineeringTooltip /></h1>
           <p className="my-4 text-md sm:text-lg">
-            I’ve built up a decades worth of experience building consumer and b2b web applications - with a focus on early-stage companies to design and develop first versions of their product.
+            I&apos;ve built up a decades worth of experience building consumer and b2b web applications - with a focus on early-stage companies to design and develop first versions of their product.
           </p>
           <p className="my-4 text-md sm:text-lg">
-            Most recently I’ve worked on my own start-up{" "}
+            Most recently I&apos;ve worked on my own start-up{" "}
             <a href="https://atellio.com" target="_blank" className="pl-1 pr-2 whitespace-nowrap border pt-1 sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={AtellioColor} width="32" height="32" alt="Atellio logo" />
@@ -47,7 +47,7 @@ function AboutMe() {
             </a> alongside my co-founder, where we spent the last seven years building talent software for the creative industry.
           </p>
           <p className="my-4 text-md sm:text-lg">
-            Products I've built are being used at{" "}
+            Products I&apos;ve built are being used at{" "}
             <a href="https://nike.com" target="_blank" className="pl-1 pr-2 pt-1 whitespace-nowrap sm:pt-0.5 pb-1 border rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <SiNike className="text-black" />

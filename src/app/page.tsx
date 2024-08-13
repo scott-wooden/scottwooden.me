@@ -10,9 +10,7 @@ import ProjectsList from "./components/ProjectsList";
 function SectionHeader({ children }: PropsWithChildren) {
   return (
     <div className="p-8 flex items-center justify-center gap-2">
-      {/* <hr className="flex- 0 w-11" /> */}
       <h2 className="text-2xl font-display italic text-gray-500">{children}</h2>
-      {/* <hr className="flex- 0 w-11" /> */}
     </div>
   )
 }
@@ -82,9 +80,9 @@ export default function Home() {
             <div className="w-[1px] h-1/2 bg-gradient-to-t to-gray-200 from-white" />
             <div className="py-2 px-2 rounded text-gray-600 text-6xl">🪐</div>
             <div className="py-1 px-2 rounded text-gray-800 text-center">Thanks for stopping by!</div>
-            <div className="py-1 px-2 rounded text-gray-400 text-sm text-center">If you want to chat about a project please do <a href="mailto:scottwooden90@gmail.com" className="underline">get in touch</a></div>
+            <div className="py-1 px-2 rounded text-gray-500 text-sm text-center">If you want to chat about a project please do get in touch at <br /><a href="mailto:scottwooden90@gmail.com" className="underline">scottwooden90@gmail.com</a></div>
             <div className="w-[1px] h-1/2 bg-white" />
-            <div className="py-1 px-2 rounded text-gray-400 text-xs pb-8">Built with NextJS · Deployed using Vercel</div>
+            <div className="py-1 px-2 rounded text-gray-400 text-xs pb-8">Built with NextJS · Deployed using Vercel · <a href="https://github.com/scott-wooden/scottwooden.me" target="_blank" className="underline">Code on Github</a></div>
           </div>
         </div>
       </section>

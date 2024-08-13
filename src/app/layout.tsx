@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Scott Wooden",
-  description: "Digital Designer & Engineer",
+  description: "A Space-loving, 90's bopping digital designer & engineer",
 };
 
 export default function RootLayout({

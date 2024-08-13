@@ -2,7 +2,6 @@ import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaMedium, FaRegEnvelope } from "react-icons/fa";
 import { SiNike } from "react-icons/si";
 
-const ProfileVideo_1 = '/profile-1.mp4';
 const ProfileVideo_2 = '/profile-2.mp4';
 const ProfileVideo_2_Loader = '/profile-2-gif.gif';
 const Rei = '/rei.png';
@@ -39,7 +38,7 @@ function AboutMe() {
           </p>
           <p className="my-4 text-md sm:text-lg">
             Most recently I&apos;ve worked on my own start-up{" "}
-            <a href="https://atellio.com" target="_blank" className="pl-1 pr-2 whitespace-nowrap border pt-1 sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://atellio.com" target="_blank" className="pl-1 pr-2 bg-white whitespace-nowrap border pt-1 sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={AtellioColor} width="32" height="32" alt="Atellio logo" />
               </span>{" "}
@@ -48,25 +47,25 @@ function AboutMe() {
           </p>
           <p className="my-4 text-md sm:text-lg">
             Products I&apos;ve built are being used at{" "}
-            <a href="https://nike.com" target="_blank" className="pl-1 pr-2 pt-1 whitespace-nowrap sm:pt-0.5 pb-1 border rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://nike.com" target="_blank" className="pl-1 pr-2 bg-white pt-1 whitespace-nowrap sm:pt-0.5 pb-1 border rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <SiNike className="text-black" />
               </span>{" "}
               Nike
             </a>{" "}
-            <a href="https://nordstrom.com" className="pl-1 pr-2 border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://nordstrom.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Nordstrom} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Nordstrom
             </a>{" "}
-            <a href="https://splashlight.com" className="pl-1 pr-2 border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://splashlight.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Splashlight} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Splashlight
             </a>{" "}
-            <a href="https://rei.com" className="pl-1 pr-2 border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://rei.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Rei} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
@@ -76,7 +75,7 @@ function AboutMe() {
           </p>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto w-full flex-0 p-2 flex justify-between px-8 xl:px-16 xl:py-8 items-center">
+      <div className="max-w-3xl mx-auto w-full flex-0 p-2 flex justify-between px-8 xl:px-16 xl:pb-8 xl:pt-4 items-center">
         <div className="flex gap-2">
           <a href="https://medium.com/@woodenwoody" target="_blank" className="text-gray-500 transition-colors hover:text-gray-800 inline-flex rounded-md w-8 h-8 p-1.5 2xl:w-10 2xl:h-10 items-center justify-center bg-white hover:bg-slate-100">
             <FaMedium />

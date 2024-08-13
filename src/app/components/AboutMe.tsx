@@ -2,8 +2,8 @@ import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaMedium, FaRegEnvelope } from "react-icons/fa";
 import { SiNike } from "react-icons/si";
 
-const ProfileVideo_2 = '/profile-2.mp4';
-const ProfileVideo_2_Loader = '/profile-2-gif.gif';
+const ProfileVideo = '/profile-3.mp4';
+const ProfileVideo_Loader = '/profile-3-gif.gif';
 const Rei = '/rei.png';
 const Splashlight = '/splashlight.png';
 const Nordstrom = '/nordstrom.png';
@@ -26,8 +26,8 @@ function AboutMe() {
     <>
       <div className="max-w-3xl mx-auto px-8 pt-8 xl:px-16 sm:pt-16 flex-1 overflow-y-scroll">
         <div className="w-[124px] h-40 flex-0 bg-slate-100 rounded-b-lg rounded-tr-full rounded-tl-full overflow-hidden">
-          <video autoPlay loop className="w-32 h-40 object-cover" playsInline preload="none" muted poster={ProfileVideo_2_Loader}>
-            <source src={ProfileVideo_2} type="video/mp4" />
+          <video autoPlay loop className="w-32 h-40 object-cover" playsInline preload="none" muted poster={ProfileVideo_Loader}>
+            <source src={ProfileVideo} type="video/mp4" />
           </video>
         </div>
         <div className="pt-4 sm:p-4">

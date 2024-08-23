@@ -34,11 +34,11 @@ function AboutMe() {
           <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display !leading-10">Hey! I&apos;m Scott.</h1>
           <h1 className="text-2xl sm:text-3xl 2xl:text-4xl font-semibold font-display italic !leading-10">A space-loving, 90&apos;s-bopping <br /> <span className="font-bold italic rainbow">digital designer</span> & <EngineeringTooltip /></h1>
           <p className="my-4 text-md sm:text-lg">
-            I&apos;ve built up a decades worth of experience building consumer and b2b web applications - with a focus on early-stage companies to design and develop first versions of their product.
+            I&apos;ve built up a decades worth of experience building consumer and B2B web applications - with a focus on early-stage companies to design and develop first versions of their product.
           </p>
           <p className="my-4 text-md sm:text-lg">
             Most recently I&apos;ve worked on my own start-up{" "}
-            <a href="https://atellio.com" target="_blank" className="pl-1 pr-2 bg-white whitespace-nowrap border pt-1 sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+            <a href="https://atellio.com" target="_blank" className="pl-0.5 sm:pl-1 pr-2 bg-white border whitespace-nowrap pt-0.5 pb-0.5 sm:pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
               <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={AtellioColor} width="32" height="32" alt="Atellio logo" />
               </span>{" "}
@@ -47,26 +47,26 @@ function AboutMe() {
           </p>
           <p className="my-4 text-md sm:text-lg">
             Products I&apos;ve built are being used at{" "}
-            <a href="https://nike.com" target="_blank" className="pl-1 pr-2 bg-white pt-1 whitespace-nowrap sm:pt-0.5 pb-1 border rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
-              <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
+            <a href="https://nike.com" target="_blank" className="pl-0.5 sm:pl-1 pr-2 bg-white border whitespace-nowrap pt-0.5 pb-0.5 sm:pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+              <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <SiNike className="text-black" />
               </span>{" "}
               Nike
             </a>{" "}
-            <a href="https://nordstrom.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
-              <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
+            <a href="https://nordstrom.com" className="pl-0.5 sm:pl-1 pr-2 bg-white border whitespace-nowrap pt-0.5 pb-0.5 sm:pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+              <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Nordstrom} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Nordstrom
             </a>{" "}
-            <a href="https://splashlight.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
-              <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
+            <a href="https://splashlight.com" className="pl-0.5 sm:pl-1 pr-2 bg-white border whitespace-nowrap pt-0.5 pb-0.5 sm:pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+              <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Splashlight} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               Splashlight
             </a>{" "}
-            <a href="https://rei.com" className="pl-1 pr-2 bg-white border pt-1 whitespace-nowrap sm:pt-0.5 pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
-              <span className="w-5 h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
+            <a href="https://rei.com" className="pl-0.5 sm:pl-1 pr-2 bg-white border whitespace-nowrap pt-0.5 pb-0.5 sm:pb-1 rounded-full items-center duration-300 border-gray-200 no-underline transition-all hover:shadow-sm hover:border-gray-400">
+              <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full inline-flex items-center justify-center align-text-bottom overflow-hidden bg-gray-100">
                 <Image src={Rei} width="32" height="32" alt="Zizzi logo" />
               </span>{" "}
               REI

@@ -30,7 +30,7 @@ function ProjectsItem({ title, subtitle, link, logo }: { title: string | React.R
 const ProjectsList = () => {
   return (
     <>
-      <ProjectsItem logo={KMLogo} title="Kudos Maps" subtitle="Premium artwork celebrating personal athletic wins" link="https://www.kudosmaps.com/" />
+      <ProjectsItem logo={KMLogo} title="Kudos Maps (WIP)" subtitle="Premium artwork celebrating personal athletic wins" link="https://www.kudosmaps.com/" />
       <ProjectsItem logo={QuietJoy} title="Quiet Joy" subtitle="My personal creative journal" link="https://quietjoy.co/" />
     </>
   );

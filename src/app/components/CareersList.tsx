@@ -4,11 +4,13 @@ import Image from "next/image";
 import classNames from "classnames";
 import { FaCross, FaLink } from "react-icons/fa";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
+import { PiStrategyBold } from "react-icons/pi";
 
 const AtellioColor = '/Atellio-color.png';
 const EasleColor = '/Easle-color.png';
 const DojoColor = '/Dojo-color.png';
 const OrderswiftColor = '/Orderswift-color.png';
+const FreelanceColor = '/Freelance-color.png';
 
 function CareerItem({ title, subtitle, meta, children, logo }: { title: string | React.ReactNode, subtitle: string, meta: string, logo: string, children?: React.ReactNode }) {
   const [expanded, setExpanded] = useState(false);
@@ -50,8 +52,8 @@ function CareersList() {
   return (
     <>
       <CareerItem
-        title={<>Atellio <span className="font-medium">SaaS Enterprise Product</span></>}
-        subtitle="Co-Founder & CPO · Design, Development & Branding"
+        title={<>Atellio <span className="font-medium">B2B Enterprise SaaS Product</span></>}
+        subtitle="CPO & Co-Founder · Design, Development & Branding"
         meta="2018 - Present"
         logo={AtellioColor}
       >
@@ -61,6 +63,7 @@ function CareersList() {
           </a>
           <ul>
             <li>💻 Enterprise SaaS talent management / resourcing platform</li>
+            <li>🧑‍🎨 Responsible for branding, UX / UI design and product direction</li>
             <li>💵 Raised $1m from investors to scale and grow product offering</li>
             <li>📈 Reached $1m Revenue ARR</li>
             <li>🏢 Customers include Nike, Nordstrom, Splashlight & Converse</li>
@@ -78,13 +81,13 @@ function CareersList() {
       </CareerItem>
       <CareerItem
         title={<>Easle <span className="font-medium">Premium Creative Marketplace</span></>}
-        subtitle="Co-Founder & CPO · Design, Development & Branding"
+        subtitle="CPO & Co-Founder · Design, Development & Branding"
         meta="2016 - 2018"
         logo={EasleColor}
       >
         <>
-          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-100">
-            <FaCross className="text-gray-500" /> Shut down 2019
+          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-50">
+            <PiStrategyBold className="text-gray-400" /> Pivotted to Atellio
           </div>
           <ul>
             <li>💻 A marketplace to find and book talented vetted creatives</li>
@@ -114,8 +117,8 @@ function CareersList() {
         logo={DojoColor}
       >
         <>
-          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-100">
-            <FaCross className="text-gray-500" /> Shut down 2018
+          <div className="px-2 py-1 border rounded-full inline-flex gap-1 items-center border-gray-200 text-sm bg-gray-50">
+            <PiStrategyBold className="text-gray-400" /> Pivotted to Kyra
           </div>
           <ul>
             <li>💻 A City Discovery App for London / Paris - Think Timeout but cooler...</li>
@@ -158,6 +161,27 @@ function CareersList() {
           <p>
             The business continues on today serving customers across a number of high street chains such as Zizzi, Giggling Squid & Busaba.
           </p>
+        </>
+      </CareerItem>
+
+      <CareerItem
+        title="Freelance & Consulting"
+        subtitle="Creative Direction / Design Lead: UX & UI / Developer"
+        meta="2011 - 2016"
+        logo={FreelanceColor}
+      >
+        <>
+          <p>
+            Through my freelance career I have worked with a number companies of various shapes and sizes on short-term projects. Some of which are listed below:
+          </p>
+          <ul>
+            <li><span className="font-bold">Barclays:</span> UX / UI design for an iOS app</li>
+            <li><span className="font-bold">Hitch:</span> UX / UI design for iOS dating app</li>
+            <li><span className="font-bold">ADA. National College:</span> UX / UI design for college website and CMS</li>
+            <li><span className="font-bold">VFestival:</span> UX / UI design for iOS festival app 2015</li>
+            <li><span className="font-bold">Daniel Shiffman:</span> Creative direction & website build for a coding tutor</li>
+            <li><span className="font-bold">Wildd:</span> Creative Direction / UX & UI design for a kids outdoor explorers App</li>
+          </ul>
         </>
       </CareerItem>
     </>

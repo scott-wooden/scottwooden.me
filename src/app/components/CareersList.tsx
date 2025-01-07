@@ -69,10 +69,10 @@ function CareersList() {
             <li>🏢 Customers include Nike, Nordstrom, Splashlight & Converse</li>
           </ul>
           <p>
-            Atellio (initially called Stitch)  is an enterprise SaaS platform that allows companies to manage their talent and crew. It was born out of our insights from Easle, where customers on Easle would ask about white labelling the platform for their own talent management needs. Within 2 weeks of building a prototype, we had our first paying customer.
+            Atellio (initially called Stitch) is an enterprise SaaS platform that allows companies to manage their talent and crew. It was born out of our insights from Easle, where customers on Easle would ask about white labelling the platform for their own talent management needs. Within 2 weeks of building a prototype, we had our first paying customer.
           </p>
           <p>
-            We soon found traction within the retail and fashion space, where large companies would struggle to wrangle together their talent into one coherent system. We worked alongside these companies to extend the product offering. Our system build bespoke features for shortlisting, booking, budgeting and assigning talent to photo and video productions.
+            We soon found traction within the retail and fashion space, where large companies would struggle to wrangle together their talent into one coherent system. We worked alongside these companies to extend the product offering. Our system built bespoke features for shortlisting, booking, budgeting and assigning talent to photo and video productions.
           </p>
           <p>
             In its peak we got to just shy of $1m in annual recurring revenue, with customers like Nike, Walmart, Nordstrom and REI to name a few. Serving 100’s of users within these customers to manage their fluid workforce across high velocity projects.

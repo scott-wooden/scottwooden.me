@@ -91,8 +91,8 @@ function AboutMe() {
           </a>
         </div>
         <div className="rounded-full p-1 px-2 border border-gray-200 text-sm flex items-center gap-1">
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-green-500 flex-0 pulse relative" />
-          <span>Available from{"  "}<span className="font-semibold">March</span></span>
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-orange-500 flex-0 pulse relative" />
+          <span>Currently Unavailable</span>
         </div>
       </div>
     </>
